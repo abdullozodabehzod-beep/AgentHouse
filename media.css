@@ -1,0 +1,192 @@
+@media (max-width:768px){
+
+
+    h1 {
+         -webkit-tap-highlight-color: transparent;
+        font-size: 23px;
+    }
+
+    nav{
+        background: rgb(125, 91, 59);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 
+        max-height 0.35s ease,
+        opacity 0.35s ease,
+        transform 0.35s ease;
+
+    }
+
+     nav.active{
+        max-height: 250px;
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 18px;
+         -webkit-tap-highlight-color: transparent;
+
+    }
+
+   
+
+    .burger {
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+    }
+
+     .img{
+        height: 400px;
+    }
+
+
+     #welcome{
+        font-size: 20px;
+        position: absolute;
+        top: 38%;
+    }
+
+    #welcome-2{
+        font-size: 17px;
+        position: absolute;
+        top: 44%;
+    }
+
+  .slideText {
+    --from-x: -23%;
+    --to-x: -100%;
+    font-size: 7px;
+    animation-duration: 10s;
+  }
+
+ .head{
+    font-size: 17px;
+ }
+
+ .building{
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .build-1{
+    
+    width: 220px;
+    height: 110px;
+ }
+
+ .build-1 .img{
+    width: 80px;
+   height: 110px;     
+}
+
+.build-1-text{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.build-2-text{
+    font-size: 11px;
+}
+.knowMore{
+    position: relative;
+    top: 5px;
+    left: 25px;
+    width: 80px;
+    font-size: 10px;
+    
+}
+
+.calculator-1{
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+}
+
+@media(hover: hover) {
+    #welcome:hover{
+        transform: scale(1.1);
+    }
+    #welcome-2:hover{
+        transform: scale(1.1);
+    }
+
+    .details:hover{
+        background: rgb(42, 41, 41);
+    }
+    .knowMore:hover{
+        background: rgb(35, 33, 31);
+    }
+
+    .hover-text:hover{
+        color: rgb(255, 126, 52);
+    }
+}
+
+
+
+/* 📱 Телефон */
+@media (hover: none) {
+  nav a:active {
+    color: rgb(255, 126, 52);
+  }
+  
+    #welcome-2:active, #welcome:active{
+    transform: scale(1.1);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+
+  .details:active{
+    background: rgb(35, 33, 31);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  .analytic:active{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  .build-1:active{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    
+  }
+
+  .knowMore:active{
+    background: rgb(42, 41, 41);
+  }
+
+  .calculator-1{
+      -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  .hover-text:active{
+       color: rgb(255, 126, 52);
+  }
+
+  .main-details{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+
+  }
+ 
+}
+
+

@@ -385,6 +385,12 @@ footer{
 .footer-main p:hover:active{
   color: silver;
 }
+
+.sell-box:active{
+   -webkit-tap-highlight-color: transparent;
+    user-select: none;
+
+}
 }
 
 

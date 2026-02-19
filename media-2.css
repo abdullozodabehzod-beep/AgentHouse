@@ -1,0 +1,54 @@
+@media (max-width:768px){
+
+    h1 {
+         -webkit-tap-highlight-color: transparent;
+        font-size: 23px;
+    }
+    nav{
+        background: rgb(125, 91, 59);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 
+        max-height 0.35s ease,
+        opacity 0.35s ease,
+        transform 0.35s ease;
+
+    }
+
+     nav.active{
+        max-height: 250px;
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 18px;
+         -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    
+.building_new{
+  flex-direction: column;
+  gap: 20px;
+}
+
+}
+
+@media(hover:none) {
+    
+}
